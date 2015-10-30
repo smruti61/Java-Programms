@@ -1,0 +1,22 @@
+//Reverse a sentence by words using split
+
+import java.util.Scanner;
+public class ReverseByWord {
+
+	public static void main(String args[])
+	{
+		String sentence;
+		String result = "";
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the sentence");
+		sentence = sc.nextLine();
+	    
+		String[] line = sentence.split(" ");
+		for (int i = line.length-1; i >= 0; i--)
+		{
+			result += (line[i] + " ");
+					
+		}
+		System.out.println(result);
+	}	
+}
